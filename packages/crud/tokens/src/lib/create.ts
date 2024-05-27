@@ -1,8 +1,8 @@
 import { nanoid } from 'nanoid';
 import { z } from 'zod';
 
-import { createAdminClient } from '@saasfy/supabase/server';
-import { hashToken, maskToken } from '@saasfy/utils/server';
+import { createAdminClient } from '@releasehub/supabase/server';
+import { hashToken, maskToken } from '@releasehub/utils/server';
 
 import { CreateTokenSchema } from './schemas';
 

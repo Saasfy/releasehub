@@ -1,6 +1,6 @@
 import { z, ZodType } from 'zod';
 
-import { TablesInsert } from '@saasfy/supabase';
+import { TablesInsert } from '@releasehub/supabase';
 
 export const CreateInviteSchema = z.object({
   email: z.string().email('Invalid email address'),

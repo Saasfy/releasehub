@@ -1,5 +1,5 @@
-import { withUser } from '@saasfy/api/server';
-import { createAdminClient } from '@saasfy/supabase/server';
+import { withUser } from '@releasehub/api/server';
+import { createAdminClient } from '@releasehub/supabase/server';
 
 export const POST = withUser<{ inviteId: string }>(async ({ req, user, params }) => {
   const supabase = createAdminClient();

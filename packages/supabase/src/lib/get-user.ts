@@ -1,6 +1,6 @@
 import { User } from '@supabase/supabase-js';
 
-import { hashToken } from '@saasfy/utils/server';
+import { hashToken } from '@releasehub/utils/server';
 
 import { createAdminClient, createAuthClient } from './server-client';
 

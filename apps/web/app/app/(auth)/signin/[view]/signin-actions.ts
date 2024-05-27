@@ -5,7 +5,7 @@ import { redirect } from 'next/navigation';
 
 import { z, ZodError } from 'zod';
 
-import { createAuthClient } from '@saasfy/supabase/server';
+import { createAuthClient } from '@releasehub/supabase/server';
 
 const LoginSchema = z.object({
   email: z.string().email().email('Invalid email'),

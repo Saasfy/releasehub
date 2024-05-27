@@ -4,11 +4,18 @@ import { redirect } from 'next/navigation';
 
 import { ArrowUpRightIcon } from 'lucide-react';
 
-import { CreateWorkspaceSheet } from '@saasfy/components';
-import { createAdminClient, getUser } from '@saasfy/supabase/server';
-import { Badge } from '@saasfy/ui/badge';
-import { Button } from '@saasfy/ui/button';
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@saasfy/ui/table';
+import { CreateWorkspaceSheet } from '@releasehub/components';
+import { createAdminClient, getUser } from '@releasehub/supabase/server';
+import { Badge } from '@releasehub/ui/badge';
+import { Button } from '@releasehub/ui/button';
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from '@releasehub/ui/table';
 
 export default async function Component() {
   const user = await getUser();

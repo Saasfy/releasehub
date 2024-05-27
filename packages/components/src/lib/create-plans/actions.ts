@@ -5,8 +5,8 @@ import { revalidatePath } from 'next/cache';
 import slugify from 'slugify';
 import { z, ZodError } from 'zod';
 
-import { stripe } from '@saasfy/stripe/server';
-import { createAdminClient, createClient } from '@saasfy/supabase/server';
+import { stripe } from '@releasehub/stripe/server';
+import { createAdminClient, createClient } from '@releasehub/supabase/server';
 
 const CreatePlanSchema = z.object({
   name: z.string().min(1, 'Name is required'),
@@ -55,7 +55,7 @@ export async function createPlan(formData: z.infer<typeof CreatePlanSchema>) {
     throw new Error('You have to be logged in to create a project');
   }
 
-  if (user.email !== process.env.SAASFY_ADMIN_EMAIL) {
+  if (user.email !== process.env.APP_ADMIN_EMAIL) {
     throw new Error('You have to be an admin to create a project');
   }
 
@@ -139,7 +139,7 @@ export async function updatePlan(id: string, formData: z.infer<typeof CreatePlan
     throw new Error('You have to be logged in to update a project');
   }
 
-  if (user.email !== process.env.SAASFY_ADMIN_EMAIL) {
+  if (user.email !== process.env.APP_ADMIN_EMAIL) {
     throw new Error('You have to be an admin to update a project');
   }
 

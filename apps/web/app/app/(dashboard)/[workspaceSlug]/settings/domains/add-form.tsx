@@ -2,8 +2,8 @@
 
 import { useParams, useRouter } from 'next/navigation';
 
-import { Button } from '@saasfy/ui/button';
-import { Input } from '@saasfy/ui/input';
+import { Button } from '@releasehub/ui/button';
+import { Input } from '@releasehub/ui/input';
 
 export function AddDomainForm() {
   const { workspaceSlug } = useParams();

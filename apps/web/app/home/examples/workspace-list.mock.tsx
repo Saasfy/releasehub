@@ -11,10 +11,10 @@ import {
   UserCircleIcon,
 } from 'lucide-react';
 
-import { ThemeModeToggle } from '@saasfy/components';
-import { Tables } from '@saasfy/supabase';
-import { Badge } from '@saasfy/ui/badge';
-import { Button } from '@saasfy/ui/button';
+import { ThemeModeToggle } from '@releasehub/components';
+import { Tables } from '@releasehub/supabase';
+import { Badge } from '@releasehub/ui/badge';
+import { Button } from '@releasehub/ui/button';
 import {
   Command,
   CommandEmpty,
@@ -23,7 +23,7 @@ import {
   CommandItem,
   CommandList,
   CommandSeparator,
-} from '@saasfy/ui/command';
+} from '@releasehub/ui/command';
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -31,11 +31,18 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from '@saasfy/ui/dropdown-menu';
-import { Input } from '@saasfy/ui/input';
-import { Popover, PopoverContent, PopoverTrigger } from '@saasfy/ui/popover';
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@saasfy/ui/table';
-import { cn } from '@saasfy/utils';
+} from '@releasehub/ui/dropdown-menu';
+import { Input } from '@releasehub/ui/input';
+import { Popover, PopoverContent, PopoverTrigger } from '@releasehub/ui/popover';
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from '@releasehub/ui/table';
+import { cn } from '@releasehub/utils';
 
 export function WorkspaceListMock() {
   const workspaces: Tables<'workspaces'>[] = [
@@ -90,7 +97,7 @@ export function WorkspaceListMock() {
           <nav className="hidden flex-col gap-6 text-lg font-medium md:flex md:flex-row md:items-center md:gap-5 md:text-sm lg:gap-6">
             <Link className="flex items-center gap-2 text-lg font-semibold md:text-base" href={`/`}>
               <CloudyIcon className="h-6 w-6" />
-              <span className="sr-only">Saasfy</span>
+              <span className="sr-only">ReleaseHub</span>
             </Link>
             <Popover>
               <PopoverTrigger asChild>

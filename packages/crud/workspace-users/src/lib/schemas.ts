@@ -1,6 +1,6 @@
 import { z, ZodType } from 'zod';
 
-import { Enums, TablesInsert, TablesUpdate } from '@saasfy/supabase';
+import { Enums, TablesInsert, TablesUpdate } from '@releasehub/supabase';
 
 export const CreateWorkspaceUserSchema = z.object({
   workspace_id: z.string().min(1, 'Workspace ID is required'),

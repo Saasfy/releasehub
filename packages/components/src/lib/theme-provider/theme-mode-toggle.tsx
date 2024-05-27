@@ -5,14 +5,14 @@ import { useTheme } from 'next-themes';
 
 import { Check, Moon, Sun } from 'lucide-react';
 
-import { Button } from '@saasfy/ui/button';
+import { Button } from '@releasehub/ui/button';
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from '@saasfy/ui/dropdown-menu';
-import { cn } from '@saasfy/utils';
+} from '@releasehub/ui/dropdown-menu';
+import { cn } from '@releasehub/utils';
 
 export function ThemeModeToggle() {
   const { theme, setTheme, themes } = useTheme();

@@ -1,5 +1,5 @@
-import { withWorkspaceOwner, withWorkspaceUser } from '@saasfy/api/server';
-import { deleteWorkspace, updateWorkspace } from '@saasfy/crud/workspaces/server';
+import { withWorkspaceOwner, withWorkspaceUser } from '@releasehub/api/server';
+import { deleteWorkspace, updateWorkspace } from '@releasehub/crud/workspaces/server';
 
 export const PATCH = withWorkspaceUser(
   ['member', 'owner'],

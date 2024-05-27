@@ -4,10 +4,10 @@ import { redirect } from 'next/navigation';
 
 import { CloudyIcon, SearchIcon, UserCircleIcon } from 'lucide-react';
 
-import { AccountMenu, ThemeModeToggle, WorkspaceCombobox } from '@saasfy/components';
-import { createAdminClient, getUser } from '@saasfy/supabase/server';
-import { Button } from '@saasfy/ui/button';
-import { Input } from '@saasfy/ui/input';
+import { AccountMenu, ThemeModeToggle, WorkspaceCombobox } from '@releasehub/components';
+import { createAdminClient, getUser } from '@releasehub/supabase/server';
+import { Button } from '@releasehub/ui/button';
+import { Input } from '@releasehub/ui/input';
 
 export default async function DashboardLayout({ children }: { children: ReactNode }) {
   const user = await getUser();
@@ -31,7 +31,7 @@ export default async function DashboardLayout({ children }: { children: ReactNod
           <nav className="hidden flex-col gap-6 text-lg font-medium md:flex md:flex-row md:items-center md:gap-5 md:text-sm lg:gap-6">
             <Link className="flex items-center gap-2 text-lg font-semibold md:text-base" href={`/`}>
               <CloudyIcon className="h-6 w-6" />
-              <span className="sr-only">Saasfy</span>
+              <span className="sr-only">ReleaseHub</span>
             </Link>
             <WorkspaceCombobox workspaces={workspaces} />
           </nav>

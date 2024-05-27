@@ -4,10 +4,17 @@ import { redirect } from 'next/navigation';
 
 import { ArrowUpRightIcon, SettingsIcon } from 'lucide-react';
 
-import { CreateProjectSheet } from '@saasfy/components';
-import { createAdminClient, getUser } from '@saasfy/supabase/server';
-import { Button } from '@saasfy/ui/button';
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@saasfy/ui/table';
+import { CreateProjectSheet } from '@releasehub/components';
+import { createAdminClient, getUser } from '@releasehub/supabase/server';
+import { Button } from '@releasehub/ui/button';
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from '@releasehub/ui/table';
 
 export default async function Component({ params }: { params: { workspaceSlug: string } }) {
   const user = await getUser();

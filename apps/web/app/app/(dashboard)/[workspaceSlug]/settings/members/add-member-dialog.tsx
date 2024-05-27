@@ -5,7 +5,7 @@ import { useParams, useRouter } from 'next/navigation';
 
 import { useForm } from 'react-hook-form';
 
-import { Button } from '@saasfy/ui/button';
+import { Button } from '@releasehub/ui/button';
 import {
   Dialog,
   DialogContent,
@@ -14,12 +14,18 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from '@saasfy/ui/dialog';
-import { Form, FormControl, FormField, FormItem, FormMessage } from '@saasfy/ui/form';
-import { Input } from '@saasfy/ui/input';
-import { Label } from '@saasfy/ui/label';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@saasfy/ui/select';
-import { useToast } from '@saasfy/ui/use-toast';
+} from '@releasehub/ui/dialog';
+import { Form, FormControl, FormField, FormItem, FormMessage } from '@releasehub/ui/form';
+import { Input } from '@releasehub/ui/input';
+import { Label } from '@releasehub/ui/label';
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from '@releasehub/ui/select';
+import { useToast } from '@releasehub/ui/use-toast';
 
 export function AddMemberDialog({ children }: { children: React.ReactNode }) {
   const params = useParams();

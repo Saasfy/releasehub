@@ -4,7 +4,7 @@ import { ReactNode } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
-import { cn } from '@saasfy/utils';
+import { cn } from '@releasehub/utils';
 
 export default function UserSettingsLayout({ children }: { children: ReactNode }) {
   const path = usePathname();

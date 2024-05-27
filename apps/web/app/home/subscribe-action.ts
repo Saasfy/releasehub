@@ -2,7 +2,7 @@
 
 import * as process from 'node:process';
 
-import { resend } from '@saasfy/resend/server';
+import { resend } from '@releasehub/resend/server';
 
 export async function subscribeAction(formData: FormData) {
   const email = formData.get('email') as string;

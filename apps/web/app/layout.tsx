@@ -5,23 +5,23 @@ import { Metadata } from 'next';
 
 import { Analytics } from '@vercel/analytics/react';
 
-import { ThemeProvider } from '@saasfy/components';
-import { Toaster } from '@saasfy/ui/toaster';
+import { ThemeProvider } from '@releasehub/components';
+import { Toaster } from '@releasehub/ui/toaster';
 
 export const metadata: Metadata = {
   title: {
-    default: 'Saasfy',
-    template: `%s | Saasfy`,
+    default: 'ReleaseHub',
+    template: `%s | ReleaseHub`,
   },
-  description: 'Saasfy is a modern SaaS boilerplate.',
-  applicationName: 'Saasfy',
+  description: 'ReleaseHub is a new way to show your software changelog.',
+  applicationName: 'ReleaseHub',
   authors: {
     url: 'https://github.com/IKatsuba',
     name: 'Igor Katsuba',
   },
   creator: 'Igor Katsuba',
-  keywords: ['saas', 'boilerplate', 'nextjs', 'typescript'],
-  metadataBase: new URL('https://saasfy.dev'),
+  keywords: ['saas', 'nextjs', 'typescript', 'changelog'],
+  metadataBase: new URL('https://releasehub.dev'),
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

@@ -2,8 +2,8 @@ import { redirect } from 'next/navigation';
 
 import { ExternalLinkIcon } from 'lucide-react';
 
-import { createAdminClient, getUser } from '@saasfy/supabase/server';
-import { Badge } from '@saasfy/ui/badge';
+import { createAdminClient, getUser } from '@releasehub/supabase/server';
+import { Badge } from '@releasehub/ui/badge';
 
 import { AddDomainForm } from './add-form';
 import { DomainConfiguration } from './domain-configuration';

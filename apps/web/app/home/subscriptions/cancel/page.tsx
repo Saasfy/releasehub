@@ -2,8 +2,8 @@ import Link from 'next/link';
 
 import { CircleX } from 'lucide-react';
 
-import { Button } from '@saasfy/ui/button';
-import { Card, CardContent, CardFooter, CardHeader } from '@saasfy/ui/card';
+import { Button } from '@releasehub/ui/button';
+import { Card, CardContent, CardFooter, CardHeader } from '@releasehub/ui/card';
 
 export default function Component() {
   return (

@@ -1,6 +1,6 @@
-import { withPlatformAdmin } from '@saasfy/api/server';
-import { stripe } from '@saasfy/stripe/server';
-import { createAdminClient } from '@saasfy/supabase/server';
+import { withPlatformAdmin } from '@releasehub/api/server';
+import { stripe } from '@releasehub/stripe/server';
+import { createAdminClient } from '@releasehub/supabase/server';
 
 export const DELETE = withPlatformAdmin<{ id: string }>(async ({ req, params }) => {
   const id = params.id;

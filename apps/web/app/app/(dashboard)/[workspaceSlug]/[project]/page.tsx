@@ -1,6 +1,6 @@
 import { redirect } from 'next/navigation';
 
-import { createAdminClient } from '@saasfy/supabase/server';
+import { createAdminClient } from '@releasehub/supabase/server';
 
 export default async function ProjectPage({ params }: { params: { project: string } }) {
   const supabase = createAdminClient();

@@ -1,4 +1,4 @@
-import { CreatePlanForm } from '@saasfy/components';
+import { CreatePlanForm } from '@releasehub/components';
 
 export default function Component() {
   return <CreatePlanForm />;

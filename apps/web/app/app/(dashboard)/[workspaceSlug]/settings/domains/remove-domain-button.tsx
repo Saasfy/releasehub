@@ -3,8 +3,8 @@
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 
-import { Tables } from '@saasfy/supabase';
-import { Button } from '@saasfy/ui/button';
+import { Tables } from '@releasehub/supabase';
+import { Button } from '@releasehub/ui/button';
 
 export function RemoveDomainButton({
   domain,

@@ -1,8 +1,8 @@
 import { z } from 'zod';
 
-import { getUrl } from '@saasfy/api/server';
-import { stripe } from '@saasfy/stripe/server';
-import { createAdminClient } from '@saasfy/supabase/server';
+import { getUrl } from '@releasehub/api/server';
+import { stripe } from '@releasehub/stripe/server';
+import { createAdminClient } from '@releasehub/supabase/server';
 
 const FormData = z.object({
   priceId: z.string(),

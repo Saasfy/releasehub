@@ -1,7 +1,14 @@
-import { createAdminClient, getUser } from '@saasfy/supabase/server';
-import { Button } from '@saasfy/ui/button';
-import { Card, CardContent, CardFooter, CardHeader } from '@saasfy/ui/card';
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@saasfy/ui/table';
+import { createAdminClient, getUser } from '@releasehub/supabase/server';
+import { Button } from '@releasehub/ui/button';
+import { Card, CardContent, CardFooter, CardHeader } from '@releasehub/ui/card';
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from '@releasehub/ui/table';
 
 import { CreateTokenDialog } from './create-token-dialog';
 import { RevokeButton } from './revoke-button';

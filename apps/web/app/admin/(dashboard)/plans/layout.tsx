@@ -2,8 +2,8 @@ import React, { ReactNode } from 'react';
 
 import { UserCircleIcon } from 'lucide-react';
 
-import { AccountMenu } from '@saasfy/components';
-import { Button } from '@saasfy/ui/button';
+import { AccountMenu } from '@releasehub/components';
+import { Button } from '@releasehub/ui/button';
 
 export default async function Component({ children }: { children: ReactNode }) {
   return (

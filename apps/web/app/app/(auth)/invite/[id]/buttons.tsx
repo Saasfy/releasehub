@@ -3,8 +3,8 @@
 import * as React from 'react';
 import { useParams, useRouter } from 'next/navigation';
 
-import { Button } from '@saasfy/ui/button';
-import { useToast } from '@saasfy/ui/use-toast';
+import { Button } from '@releasehub/ui/button';
+import { useToast } from '@releasehub/ui/use-toast';
 
 export function AcceptButton() {
   const { id } = useParams();

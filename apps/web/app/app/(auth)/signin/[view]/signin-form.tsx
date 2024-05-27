@@ -2,12 +2,12 @@
 
 import Link from 'next/link';
 
-import { createClient } from '@saasfy/supabase';
-import { Button } from '@saasfy/ui/button';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@saasfy/ui/card';
-import { Input } from '@saasfy/ui/input';
-import { Label } from '@saasfy/ui/label';
-import { useToast } from '@saasfy/ui/use-toast';
+import { createClient } from '@releasehub/supabase';
+import { Button } from '@releasehub/ui/button';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@releasehub/ui/card';
+import { Input } from '@releasehub/ui/input';
+import { Label } from '@releasehub/ui/label';
+import { useToast } from '@releasehub/ui/use-toast';
 
 import { forgotPassword, login, signup } from './signin-actions';
 

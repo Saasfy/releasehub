@@ -5,9 +5,9 @@ import { usePathname } from 'next/navigation';
 
 import { ArrowUpRightIcon } from 'lucide-react';
 
-import { Tables } from '@saasfy/supabase';
-import { Button } from '@saasfy/ui/button';
-import { cn } from '@saasfy/utils';
+import { Tables } from '@releasehub/supabase';
+import { Button } from '@releasehub/ui/button';
+import { cn } from '@releasehub/utils';
 
 export function Nav({ workspace }: { workspace: Tables<'workspaces'> }) {
   const path = usePathname();

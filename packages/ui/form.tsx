@@ -11,7 +11,7 @@ import {
   useFormContext,
 } from 'react-hook-form';
 
-import { cn } from '@saasfy/utils';
+import { cn } from '@releasehub/utils';
 
 import { Label } from './label';
 

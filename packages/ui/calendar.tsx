@@ -5,7 +5,7 @@ import * as React from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { DayPicker } from 'react-day-picker';
 
-import { cn } from '@saasfy/utils';
+import { cn } from '@releasehub/utils';
 
 import { buttonVariants } from './button';
 

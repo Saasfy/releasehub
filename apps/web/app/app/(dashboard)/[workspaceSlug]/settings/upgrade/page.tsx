@@ -1,8 +1,8 @@
 import Link from 'next/link';
 
-import { createAdminClient } from '@saasfy/supabase/server';
-import { Button } from '@saasfy/ui/button';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@saasfy/ui/card';
+import { createAdminClient } from '@releasehub/supabase/server';
+import { Button } from '@releasehub/ui/button';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@releasehub/ui/card';
 
 export default async function Upgrade({ params }: { params: { workspaceSlug: string } }) {
   const supabase = createAdminClient();

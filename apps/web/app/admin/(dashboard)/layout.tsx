@@ -4,7 +4,7 @@ import { redirect } from 'next/navigation';
 
 import { CloudyIcon } from 'lucide-react';
 
-import { getUser } from '@saasfy/supabase/server';
+import { getUser } from '@releasehub/supabase/server';
 
 import DashboardNav from './nav';
 
@@ -15,7 +15,7 @@ export default async function Component({ children }: { children: ReactNode }) {
     return redirect('/signin');
   }
 
-  if (user.email !== process.env.SAASFY_ADMIN_EMAIL) {
+  if (user.email !== process.env.APP_ADMIN_EMAIL) {
     return (
       <div className="flex min-h-screen items-center justify-center">
         <h1 className="text-2xl font-semibold">You are not authorized to access this page.</h1>
@@ -30,7 +30,7 @@ export default async function Component({ children }: { children: ReactNode }) {
           <div className="flex h-[60px] items-center border-b px-6">
             <Link className="flex items-center gap-2 font-semibold" href="#">
               <CloudyIcon className="h-6 w-6" />
-              <span className="">Saasfy</span>
+              <span className="">ReleaseHub</span>
             </Link>
           </div>
           <div className="flex-1 overflow-auto py-2">

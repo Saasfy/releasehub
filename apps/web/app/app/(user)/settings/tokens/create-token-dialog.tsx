@@ -2,7 +2,7 @@
 
 import { useRouter } from 'next/navigation';
 
-import { Button } from '@saasfy/ui/button';
+import { Button } from '@releasehub/ui/button';
 import {
   Dialog,
   DialogClose,
@@ -12,10 +12,10 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from '@saasfy/ui/dialog';
-import { Input } from '@saasfy/ui/input';
-import { Label } from '@saasfy/ui/label';
-import { useToast } from '@saasfy/ui/use-toast';
+} from '@releasehub/ui/dialog';
+import { Input } from '@releasehub/ui/input';
+import { Label } from '@releasehub/ui/label';
+import { useToast } from '@releasehub/ui/use-toast';
 
 export function CreateTokenDialog({ children }: { children: React.ReactNode }) {
   const { toast } = useToast();
