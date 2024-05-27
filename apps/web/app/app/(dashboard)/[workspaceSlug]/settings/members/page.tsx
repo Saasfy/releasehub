@@ -4,8 +4,8 @@ import { redirect } from 'next/navigation';
 import { FilterIcon, PlusIcon } from 'lucide-react';
 import postgres from 'postgres';
 
-import { createAdminClient, getUser, Tables } from '@saasfy/supabase/server';
-import { Button } from '@saasfy/ui/button';
+import { createAdminClient, getUser, Tables } from '@releasehub/supabase/server';
+import { Button } from '@releasehub/ui/button';
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -14,8 +14,8 @@ import {
   DropdownMenuRadioItem,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from '@saasfy/ui/dropdown-menu';
-import { Input } from '@saasfy/ui/input';
+} from '@releasehub/ui/dropdown-menu';
+import { Input } from '@releasehub/ui/input';
 
 import { AddMemberDialog } from './add-member-dialog';
 import { InviteTable } from './invite-table';

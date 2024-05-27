@@ -4,7 +4,7 @@ import { useParams, useRouter } from 'next/navigation';
 
 import { TrashIcon } from 'lucide-react';
 
-import { Button } from '@saasfy/ui/button';
+import { Button } from '@releasehub/ui/button';
 
 export function RemoveInviteButton({ inviteId }: { inviteId: string }) {
   const { workspaceSlug } = useParams();

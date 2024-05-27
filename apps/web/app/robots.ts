@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://saasfy.dev/sitemap.xml',
+    sitemap: 'https://releasehub.dev/sitemap.xml',
   };
 }

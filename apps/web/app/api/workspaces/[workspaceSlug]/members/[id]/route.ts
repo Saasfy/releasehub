@@ -1,6 +1,6 @@
-import { withWorkspaceOwner } from '@saasfy/api/server';
-import { getWorkspaceUser, updateWorkspaceUser } from '@saasfy/crud/workspace-users/server';
-import { deleteWorkspace } from '@saasfy/crud/workspaces/server';
+import { withWorkspaceOwner } from '@releasehub/api/server';
+import { getWorkspaceUser, updateWorkspaceUser } from '@releasehub/crud/workspace-users/server';
+import { deleteWorkspace } from '@releasehub/crud/workspaces/server';
 
 export const PATCH = withWorkspaceOwner<{ id: string }>(
   async ({ req, user, workspace, params: { id } }) => {

@@ -1,9 +1,16 @@
 import React from 'react';
 import Link from 'next/link';
 
-import { createAdminClient } from '@saasfy/supabase/server';
-import { Button } from '@saasfy/ui/button';
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@saasfy/ui/table';
+import { createAdminClient } from '@releasehub/supabase/server';
+import { Button } from '@releasehub/ui/button';
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from '@releasehub/ui/table';
 
 import { DeletePlanButton } from './_components/delete-plan-button';
 

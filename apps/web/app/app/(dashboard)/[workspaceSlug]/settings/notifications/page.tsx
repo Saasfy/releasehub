@@ -4,7 +4,7 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm } from 'react-hook-form';
 import { z } from 'zod';
 
-import { Button } from '@saasfy/ui/button';
+import { Button } from '@releasehub/ui/button';
 import {
   Form,
   FormControl,
@@ -12,9 +12,9 @@ import {
   FormField,
   FormItem,
   FormLabel,
-} from '@saasfy/ui/form';
-import { Switch } from '@saasfy/ui/switch';
-import { toast } from '@saasfy/ui/use-toast';
+} from '@releasehub/ui/form';
+import { Switch } from '@releasehub/ui/switch';
+import { toast } from '@releasehub/ui/use-toast';
 
 const FormSchema = z.object({
   security_emails: z.boolean(),

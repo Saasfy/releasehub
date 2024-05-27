@@ -1,7 +1,7 @@
 import { revalidatePath } from 'next/cache';
 
-import { createAdminClient, getUser } from '@saasfy/supabase/server';
-import { Button } from '@saasfy/ui/button';
+import { createAdminClient, getUser } from '@releasehub/supabase/server';
+import { Button } from '@releasehub/ui/button';
 import {
   Card,
   CardContent,
@@ -9,8 +9,8 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from '@saasfy/ui/card';
-import { Input } from '@saasfy/ui/input';
+} from '@releasehub/ui/card';
+import { Input } from '@releasehub/ui/input';
 
 async function updateName(formData: FormData) {
   'use server';

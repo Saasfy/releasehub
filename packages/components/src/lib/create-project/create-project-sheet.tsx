@@ -3,9 +3,9 @@
 import React, { useState } from 'react';
 import { useRouter } from 'next/navigation';
 
-import { Tables } from '@saasfy/supabase';
-import { Button } from '@saasfy/ui/button';
-import { Input } from '@saasfy/ui/input';
+import { Tables } from '@releasehub/supabase';
+import { Button } from '@releasehub/ui/button';
+import { Input } from '@releasehub/ui/input';
 import {
   Sheet,
   SheetClose,
@@ -14,9 +14,9 @@ import {
   SheetHeader,
   SheetTitle,
   SheetTrigger,
-} from '@saasfy/ui/sheet';
-import { ToastAction } from '@saasfy/ui/toast';
-import { useToast } from '@saasfy/ui/use-toast';
+} from '@releasehub/ui/sheet';
+import { ToastAction } from '@releasehub/ui/toast';
+import { useToast } from '@releasehub/ui/use-toast';
 
 import { createProject } from './actions';
 

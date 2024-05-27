@@ -1,8 +1,8 @@
 'use client';
 
-import { Button } from '@saasfy/ui/button';
-import { Input } from '@saasfy/ui/input';
-import { useToast } from '@saasfy/ui/use-toast';
+import { Button } from '@releasehub/ui/button';
+import { Input } from '@releasehub/ui/input';
+import { useToast } from '@releasehub/ui/use-toast';
 
 import { subscribeAction } from './subscribe-action';
 

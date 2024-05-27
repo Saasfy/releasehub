@@ -7,7 +7,7 @@ import { useRouter } from 'next/navigation';
 import { ChevronLeft, PlusCircle } from 'lucide-react';
 import { useFieldArray, useForm } from 'react-hook-form';
 
-import { Button } from '@saasfy/ui/button';
+import { Button } from '@releasehub/ui/button';
 import {
   Card,
   CardContent,
@@ -15,15 +15,35 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from '@saasfy/ui/card';
-import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@saasfy/ui/form';
-import { Input } from '@saasfy/ui/input';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@saasfy/ui/select';
-import { Switch } from '@saasfy/ui/switch';
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@saasfy/ui/table';
-import { Textarea } from '@saasfy/ui/textarea';
-import { ToggleGroup, ToggleGroupItem } from '@saasfy/ui/toggle-group';
-import { useToast } from '@saasfy/ui/use-toast';
+} from '@releasehub/ui/card';
+import {
+  Form,
+  FormControl,
+  FormField,
+  FormItem,
+  FormLabel,
+  FormMessage,
+} from '@releasehub/ui/form';
+import { Input } from '@releasehub/ui/input';
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from '@releasehub/ui/select';
+import { Switch } from '@releasehub/ui/switch';
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from '@releasehub/ui/table';
+import { Textarea } from '@releasehub/ui/textarea';
+import { ToggleGroup, ToggleGroupItem } from '@releasehub/ui/toggle-group';
+import { useToast } from '@releasehub/ui/use-toast';
 
 import { createPlan, updatePlan } from './actions';
 

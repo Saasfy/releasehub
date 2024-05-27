@@ -9,15 +9,20 @@ import {
   UploadIcon,
 } from 'lucide-react';
 
-import { ThemeModeToggle } from '@saasfy/components';
-import { createAdminClient } from '@saasfy/supabase/server';
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@saasfy/ui/accordion';
-import { Badge } from '@saasfy/ui/badge';
-import { Button } from '@saasfy/ui/button';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@saasfy/ui/card';
-import { Checkbox } from '@saasfy/ui/checkbox';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@saasfy/ui/tabs';
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@saasfy/ui/tooltip';
+import { ThemeModeToggle } from '@releasehub/components';
+import { createAdminClient } from '@releasehub/supabase/server';
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from '@releasehub/ui/accordion';
+import { Badge } from '@releasehub/ui/badge';
+import { Button } from '@releasehub/ui/button';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@releasehub/ui/card';
+import { Checkbox } from '@releasehub/ui/checkbox';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@releasehub/ui/tabs';
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@releasehub/ui/tooltip';
 
 import { AdminPlansMock } from './examples/admin-plans.mock';
 import { SignInMock } from './examples/sign-in.mock';
@@ -31,7 +36,7 @@ export default function Component() {
         <div className="flex justify-start">
           <Link className="flex items-center justify-center" href="#">
             <CloudyIcon className="h-6 w-6" />
-            <span className="sr-only">Saasfy</span>
+            <span className="sr-only">ReleaseHub</span>
           </Link>
           <nav className="ml-4 hidden gap-4 sm:flex sm:gap-6 ">
             <Link
@@ -63,7 +68,7 @@ export default function Component() {
 
         <div className="flex gap-2">
           <Button asChild className="rounded-full">
-            <Link href="https://app.saasfy.dev/">
+            <Link href="https://app.releasehub.com">
               Demo
               <ArrowUpRightIcon className="ml-1 h-4 w-4" />
             </Link>
@@ -76,7 +81,7 @@ export default function Component() {
           </Button>
 
           <Button size="icon" asChild variant="secondary" className="rounded-full">
-            <Link href="https://github.com/Saasfy/saasfy">
+            <Link href="https://github.com/Saasfy/releasehub">
               <GithubIcon className="h-4 w-4" />
             </Link>
           </Button>

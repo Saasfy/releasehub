@@ -1,5 +1,5 @@
-import { withUser } from '@saasfy/api/server';
-import { deleteToken, getToken } from '@saasfy/crud/tokens/server';
+import { withUser } from '@releasehub/api/server';
+import { deleteToken, getToken } from '@releasehub/crud/tokens/server';
 
 export const DELETE = withUser<{ tokenId: string }>(async ({ user, params }) => {
   const { errors } = await deleteToken(user.id, params.tokenId);

@@ -1,6 +1,6 @@
 import { z } from 'zod';
 
-import { createAdminClient } from '@saasfy/supabase/server';
+import { createAdminClient } from '@releasehub/supabase/server';
 
 import { CreateWorkspaceUserSchema } from './schemas';
 

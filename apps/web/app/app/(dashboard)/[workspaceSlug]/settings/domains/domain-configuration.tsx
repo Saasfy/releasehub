@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 
-import { Tables } from '@saasfy/supabase';
+import { Tables } from '@releasehub/supabase';
 
 export function DomainConfiguration({
   domain,

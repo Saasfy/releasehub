@@ -1,6 +1,6 @@
 import { redirect } from 'next/navigation';
 
-import { getUser } from '@saasfy/supabase/server';
+import { getUser } from '@releasehub/supabase/server';
 
 import { SignInForm, type SignInViews } from './signin-form';
 

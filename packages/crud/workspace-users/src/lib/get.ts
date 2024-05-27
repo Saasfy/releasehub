@@ -1,4 +1,4 @@
-import { createAdminClient } from '@saasfy/supabase/server';
+import { createAdminClient } from '@releasehub/supabase/server';
 
 export function getWorkspaceUser(params: { userId: string; workspaceId: string }) {
   return createAdminClient()

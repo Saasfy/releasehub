@@ -1,5 +1,5 @@
-import { withWorkspaceOwner } from '@saasfy/api/server';
-import { createAdminClient } from '@saasfy/supabase/server';
+import { withWorkspaceOwner } from '@releasehub/api/server';
+import { createAdminClient } from '@releasehub/supabase/server';
 
 export const DELETE = withWorkspaceOwner<{ inviteId: string }>(async ({ workspace, params }) => {
   const { inviteId } = params;

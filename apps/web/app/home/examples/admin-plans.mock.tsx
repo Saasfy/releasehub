@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 import { CloudyIcon, UserCircleIcon } from 'lucide-react';
 
-import { Button } from '@saasfy/ui/button';
+import { Button } from '@releasehub/ui/button';
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -11,8 +11,15 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from '@saasfy/ui/dropdown-menu';
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@saasfy/ui/table';
+} from '@releasehub/ui/dropdown-menu';
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from '@releasehub/ui/table';
 
 import DashboardNav from '../../admin/(dashboard)/nav';
 
@@ -45,7 +52,7 @@ export function AdminPlansMock() {
           <div className="flex h-[60px] items-center border-b px-6">
             <Link className="flex items-center gap-2 font-semibold" href="#">
               <CloudyIcon className="h-6 w-6" />
-              <span className="">Saasfy</span>
+              <span className="">ReleaseHub</span>
             </Link>
           </div>
           <div className="flex-1 overflow-auto py-2">

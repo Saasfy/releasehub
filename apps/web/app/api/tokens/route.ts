@@ -1,5 +1,5 @@
-import { withUser } from '@saasfy/api/server';
-import { createToken, getTokens } from '@saasfy/crud/tokens/server';
+import { withUser } from '@releasehub/api/server';
+import { createToken, getTokens } from '@releasehub/crud/tokens/server';
 
 export const GET = withUser(async ({ user }) => {
   const { data: tokens, error } = await getTokens(user.id);

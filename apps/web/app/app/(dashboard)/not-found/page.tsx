@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-import { Button } from '@saasfy/ui/button';
+import { Button } from '@releasehub/ui/button';
 
 export default function Component() {
   return (

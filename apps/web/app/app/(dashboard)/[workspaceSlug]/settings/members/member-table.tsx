@@ -1,8 +1,15 @@
 import { TrashIcon } from 'lucide-react';
 
-import { Tables } from '@saasfy/supabase';
-import { Button } from '@saasfy/ui/button';
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@saasfy/ui/table';
+import { Tables } from '@releasehub/supabase';
+import { Button } from '@releasehub/ui/button';
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from '@releasehub/ui/table';
 
 export function MemberTable({
   members,

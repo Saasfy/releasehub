@@ -18,6 +18,14 @@ module.exports = {
       },
     },
     extend: {
+      fontSize: {
+        '2xs': '.6875rem',
+      },
+      opacity: {
+        2.5: '0.025',
+        7.5: '0.075',
+        15: '0.15',
+      },
       colors: {
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',

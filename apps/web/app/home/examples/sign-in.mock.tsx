@@ -1,9 +1,9 @@
 import Link from 'next/link';
 
-import { Button } from '@saasfy/ui/button';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@saasfy/ui/card';
-import { Input } from '@saasfy/ui/input';
-import { Label } from '@saasfy/ui/label';
+import { Button } from '@releasehub/ui/button';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@releasehub/ui/card';
+import { Input } from '@releasehub/ui/input';
+import { Label } from '@releasehub/ui/label';
 
 import { GithubIcon, GoogleIcon } from '../../app/(auth)/signin/[view]/signin-form';
 

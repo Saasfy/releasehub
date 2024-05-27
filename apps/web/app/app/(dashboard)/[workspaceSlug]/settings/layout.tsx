@@ -1,7 +1,7 @@
 import { ReactNode } from 'react';
 import { redirect } from 'next/navigation';
 
-import { createAdminClient, getUser } from '@saasfy/supabase/server';
+import { createAdminClient, getUser } from '@releasehub/supabase/server';
 
 import { Nav } from './nav';
 

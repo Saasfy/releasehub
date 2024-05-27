@@ -1,5 +1,12 @@
-import { Tables } from '@saasfy/supabase';
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@saasfy/ui/table';
+import { Tables } from '@releasehub/supabase';
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from '@releasehub/ui/table';
 
 import { RemoveInviteButton } from './remove-invite-button';
 

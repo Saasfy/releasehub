@@ -3,8 +3,8 @@ import postgres from 'postgres';
 import Stripe from 'stripe';
 import { v4 as uuidv4 } from 'uuid';
 
-import { stripe } from '@saasfy/stripe/server';
-import { createAdminClient } from '@saasfy/supabase/server';
+import { stripe } from '@releasehub/stripe/server';
+import { createAdminClient } from '@releasehub/supabase/server';
 
 export async function POST(req: Request) {
   if (!process.env.STRIPE_WEBHOOK_SECRET) {
@@ -116,7 +116,7 @@ async function createSubscription(subscription: Stripe.Subscription) {
     const { data: newWorkspace } = await createAdminClient()
       .from('workspaces')
       .insert({
-        name: 'Saasfy Workspace',
+        name: 'New Workspace',
         slug: uuidv4(),
         status: 'active',
         stripe_customer_id: customer.id,

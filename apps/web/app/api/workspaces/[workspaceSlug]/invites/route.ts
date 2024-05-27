@@ -1,5 +1,5 @@
-import { withWorkspaceOwner } from '@saasfy/api/server';
-import { createInvite } from '@saasfy/invites/server';
+import { withWorkspaceOwner } from '@releasehub/api/server';
+import { createInvite } from '@releasehub/invites/server';
 
 export const POST = withWorkspaceOwner(async ({ req, workspace, user }) => {
   const data = await req.json();

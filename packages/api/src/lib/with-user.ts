@@ -1,6 +1,6 @@
 import type { User } from '@supabase/supabase-js';
 
-import { getUser } from '@saasfy/supabase/server';
+import { getUser } from '@releasehub/supabase/server';
 
 export function withUser<T>(
   handler: (options: { req: Request; user: User; params: T }) => Promise<Response>,

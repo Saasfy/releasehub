@@ -165,8 +165,12 @@ export type Database = {
         Row: {
           created_at: string;
           description: string | null;
+          domain_id: string | null;
+          github: string | null;
           id: string;
           name: string;
+          primary_color: string;
+          site: string | null;
           slug: string;
           updated_at: string;
           workspace_id: string;
@@ -174,8 +178,12 @@ export type Database = {
         Insert: {
           created_at?: string;
           description?: string | null;
+          domain_id?: string | null;
+          github?: string | null;
           id?: string;
           name: string;
+          primary_color?: string;
+          site?: string | null;
           slug: string;
           updated_at?: string;
           workspace_id: string;
@@ -183,18 +191,61 @@ export type Database = {
         Update: {
           created_at?: string;
           description?: string | null;
+          domain_id?: string | null;
+          github?: string | null;
           id?: string;
           name?: string;
+          primary_color?: string;
+          site?: string | null;
           slug?: string;
           updated_at?: string;
           workspace_id?: string;
         };
         Relationships: [
           {
+            foreignKeyName: 'public_projects_domain_id_fkey';
+            columns: ['domain_id'];
+            isOneToOne: false;
+            referencedRelation: 'domains';
+            referencedColumns: ['id'];
+          },
+          {
             foreignKeyName: 'public_projects_workspace_id_fkey';
             columns: ['workspace_id'];
             isOneToOne: false;
             referencedRelation: 'workspaces';
+            referencedColumns: ['id'];
+          },
+        ];
+      };
+      releases: {
+        Row: {
+          created_at: string;
+          id: string;
+          notes: string;
+          project_id: string;
+          release_date: string;
+        };
+        Insert: {
+          created_at?: string;
+          id?: string;
+          notes: string;
+          project_id: string;
+          release_date: string;
+        };
+        Update: {
+          created_at?: string;
+          id?: string;
+          notes?: string;
+          project_id?: string;
+          release_date?: string;
+        };
+        Relationships: [
+          {
+            foreignKeyName: 'public_releases_project_fkey';
+            columns: ['project_id'];
+            isOneToOne: false;
+            referencedRelation: 'projects';
             referencedColumns: ['id'];
           },
         ];

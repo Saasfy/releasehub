@@ -1,5 +1,5 @@
-import { getUrl } from '@saasfy/api/server';
-import { createAuthClient } from '@saasfy/supabase/server';
+import { getUrl } from '@releasehub/api/server';
+import { createAuthClient } from '@releasehub/supabase/server';
 
 export async function GET(request: Request) {
   const auth = createAuthClient();

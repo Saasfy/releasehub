@@ -1,6 +1,6 @@
-import { withWorkspaceOwner } from '@saasfy/api/server';
-import { createWorkspaceUser } from '@saasfy/crud/workspace-users/server';
-import { createAdminClient } from '@saasfy/supabase/server';
+import { withWorkspaceOwner } from '@releasehub/api/server';
+import { createWorkspaceUser } from '@releasehub/crud/workspace-users/server';
+import { createAdminClient } from '@releasehub/supabase/server';
 
 export const POST = withWorkspaceOwner(async ({ req, workspace: { id: workspaceId }, user }) => {
   const data = await req.json();

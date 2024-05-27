@@ -1,5 +1,5 @@
-import { CreatePlanForm } from '@saasfy/components';
-import { createAdminClient } from '@saasfy/supabase/server';
+import { CreatePlanForm } from '@releasehub/components';
+import { createAdminClient } from '@releasehub/supabase/server';
 
 export default async function EditFormPage({ params }: { params: { id: string } }) {
   const id = params.id;

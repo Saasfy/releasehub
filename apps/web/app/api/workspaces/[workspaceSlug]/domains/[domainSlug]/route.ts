@@ -1,5 +1,5 @@
-import { withWorkspaceUser } from '@saasfy/api/server';
-import { createAdminClient } from '@saasfy/supabase/server';
+import { withWorkspaceUser } from '@releasehub/api/server';
+import { createAdminClient } from '@releasehub/supabase/server';
 
 export const GET = withWorkspaceUser<{ domainSlug: string }>(
   ['owner', 'member'] as const,

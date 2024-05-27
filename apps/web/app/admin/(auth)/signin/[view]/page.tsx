@@ -1,13 +1,13 @@
 import { redirect } from 'next/navigation';
 
-import { getUser } from '@saasfy/supabase/server';
+import { getUser } from '@releasehub/supabase/server';
 
 import { SignInForm } from '../../../../app/(auth)/signin/[view]/signin-form';
 
 export default async function SignInViews() {
   const user = await getUser();
 
-  if (user && user.email === process.env.SAASFY_ADMIN_EMAIL) {
+  if (user && user.email === process.env.APP_ADMIN_EMAIL) {
     return redirect('/');
   }
 

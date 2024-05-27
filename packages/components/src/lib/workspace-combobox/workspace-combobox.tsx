@@ -5,8 +5,8 @@ import { useParams, useRouter } from 'next/navigation';
 
 import { Check, ChevronsUpDown, PlusIcon } from 'lucide-react';
 
-import { Tables } from '@saasfy/supabase';
-import { Button } from '@saasfy/ui/button';
+import { Tables } from '@releasehub/supabase';
+import { Button } from '@releasehub/ui/button';
 import {
   Command,
   CommandEmpty,
@@ -15,9 +15,9 @@ import {
   CommandItem,
   CommandList,
   CommandSeparator,
-} from '@saasfy/ui/command';
-import { Popover, PopoverContent, PopoverTrigger } from '@saasfy/ui/popover';
-import { cn } from '@saasfy/utils';
+} from '@releasehub/ui/command';
+import { Popover, PopoverContent, PopoverTrigger } from '@releasehub/ui/popover';
+import { cn } from '@releasehub/utils';
 
 import { CreateWorkspaceSheet } from '../create-workspace/create-workspace-sheet';
 

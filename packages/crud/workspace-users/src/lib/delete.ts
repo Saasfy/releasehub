@@ -1,4 +1,4 @@
-import { createAdminClient } from '@saasfy/supabase/server';
+import { createAdminClient } from '@releasehub/supabase/server';
 
 export async function deleteWorkspaceUser(id: string) {
   const supabase = createAdminClient();

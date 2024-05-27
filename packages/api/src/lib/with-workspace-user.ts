@@ -1,7 +1,7 @@
 import type { User } from '@supabase/supabase-js';
 
-import { Enums, Tables } from '@saasfy/supabase';
-import { createAdminClient } from '@saasfy/supabase/server';
+import { Enums, Tables } from '@releasehub/supabase';
+import { createAdminClient } from '@releasehub/supabase/server';
 
 import { withUser } from './with-user';
 

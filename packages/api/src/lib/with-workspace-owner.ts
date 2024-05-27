@@ -1,6 +1,6 @@
 import type { User } from '@supabase/supabase-js';
 
-import { Tables } from '@saasfy/supabase';
+import { Tables } from '@releasehub/supabase';
 
 import { withWorkspaceUser } from './with-workspace-user';
 

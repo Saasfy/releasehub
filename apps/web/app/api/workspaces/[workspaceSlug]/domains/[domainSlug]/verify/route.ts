@@ -1,4 +1,4 @@
-import { withWorkspaceUser } from '@saasfy/api/server';
+import { withWorkspaceUser } from '@releasehub/api/server';
 
 export const POST = withWorkspaceUser<{ domainSlug: string }>(
   ['owner', 'member'] as const,
